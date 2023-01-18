@@ -1,0 +1,47 @@
+<html>
+    <title>
+        Forms
+    </title>
+    <body>
+        <!-- enctype used in fomrs it is used with post,file handling -->
+        <form action="yu.php" method="get">
+            <!-- place holders,text -->
+            <label for="in1">UserName</label>
+            <!-- id, for should have same vale so it is refered to each other and connected to each other -->
+            <input type="text" id="in1" placeholder="EnterYour name" Name="us" requried autocomplete="off"/>
+            <!-- button creation -->
+            <label for="in2">Password</label>
+            <!-- type=input type , id=for identification , requried= to make it compulsary to fill , autocompletete to hide the previous rsponses -->
+            <input type="password" id="in2" placeholder="EnterYour name" requried,autocomplete="off"/>
+            <button type="button">submit</button>
+            <button type="reset">vanish</button><br>
+            <br>
+            <input type="datetime-local">
+            <input type="file" accept=".png">
+            <input type="range" min="30" max="50" value="30">
+            <label for="gender">Gender
+                <!-- in below code male refers to the value displayed in front end -->
+                <label for="uh">male
+                    <!-- in below code name =gender because the value of male or female will be sent to the field gender -->
+                    <!-- value = male or female, because the value in the value field will be transferd to data base -->
+                <input type="radio" id="uh" name="gender" value="male">
+                </label>
+                <label for="ah"> Female
+               <input type="radio" id="ah" name="gender" value="female">
+                </label>
+            </label>
+            <br>
+            <!--1.select for drop box 
+                3.value is the value passed to database 
+                3.selected for default value -->
+            <select name="Country">
+            <option value="ind">india</option>
+            <option value="pak">pakisthan</option>
+            <option value="usa">america</option>
+            <option value="afr">africa</option>
+            <option value="uk" selected>london</option>
+            </select>
+        </form>
+        <a href="./forms.html">back to form</a>
+    </body>
+</html>
